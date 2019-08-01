@@ -1,5 +1,4 @@
 APPNAME=ulam
-APPMAIN=./src/main.cpp
 TESTMAIN=ppr_tb_test_ulam
 ###########################################################################
 # Which compiler
