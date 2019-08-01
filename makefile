@@ -16,7 +16,7 @@ INCLUDES=-I./src -I./test
 # Compile option
 CFLAGS=-g -Wall -coverage
 
-SRC:=$(filter-out $(APPMAIN),$(wildcard ./src/*.c)
+SRC:=$(filter-out $(APPMAIN),$(wildcard ./src/*.c))
 TEST:=$(wildcard ./test/*.c)
 OBJ:=$(SRC:.c=.o) $(TEST:.c=.o)
 
