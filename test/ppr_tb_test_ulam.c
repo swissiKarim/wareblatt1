@@ -84,7 +84,7 @@ void ppr_tb_testUlam_max()
     int a0;
     int expected;
     int result;
-    char *msg = "testUlam_max (test_ulam)";
+    string *msg = "testUlam_max (test_ulam)";
     char *fct = "ulam_max";
     
     printf("========================================================\n");
