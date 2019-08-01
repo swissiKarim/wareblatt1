@@ -1,5 +1,5 @@
-APPNAME=ulam
-TESTMAIN=ppr_tb_test_ulam
+APPNAME=ulam.c
+TESTMAIN=ppr_tb_test_ulam.c
 ###########################################################################
 # Which compiler
 CC=g++
