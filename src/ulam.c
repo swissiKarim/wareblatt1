@@ -302,18 +302,3 @@ int ulam_multiples(int limit, int number)
  * 
  * @return IMMER 0
  */
-#int main(void)
-#{
-#    assert(ulam_max(5) == 16);
-#    assert(ulam_max(7) == 52);
-#    
-#    assert(ulam_twins(6) == 5);
-#    assert(ulam_twins(5) == -1);
-    
-#    assert(ulam_multiples(  10, 2) ==   5);
-#    assert(ulam_multiples(1000, 3) == 972);
-#    assert(ulam_multiples( 108, 3) ==  -1);
-#    assert(ulam_multiples( 391, 6) == 386);
-#    
- #   return (EXIT_SUCCESS);
-#}
