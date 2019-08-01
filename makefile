@@ -18,7 +18,7 @@ CFLAGS=-g -Wall -coverage
 
 SRC:=$(filter-out $(APPMAIN),$(wildcard ./src/*.c))
 TEST:=$(wildcard ./test/*.c)
-#OBJ:=$(SRC:.c=.o) $(TEST:.c=.o)
+OBJ:=$(SRC:.c=.o) $(TEST:.c=.o)
 
 ###########################################################################
 # Control Script
