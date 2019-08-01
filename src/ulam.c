@@ -63,8 +63,8 @@
  * @param an        positive ganze Zahl, zu der der nächste ULAM-Wert
  *                  geliefert werden soll.
  * @return          der nächste ULAM-Wert zur übergebenen Zahl
-int ulam(int an); */
-
+ */
+int ulam(int an);
 
 /**
  * Liefert für eine positive ganze Zahl a0 den maximalen Wert in der Folge 
@@ -78,8 +78,8 @@ int ulam(int an); */
  *                  werden soll.
  * @return          der maximale ULAM-Wert zur übergebenen Zahl 
  *                  oder -1 bei Überlauf oder wenn a0 < 1 ist
- int ulam_max(int a0);*/
-
+ */
+int ulam_max(int a0);
 
 /**
  * Prüft für alle positiven ganzen Zahlen a0 von 1 bis einschließlich limit, 
@@ -98,8 +98,8 @@ int ulam(int an); */
  * @return          die kleinere Zahl des letzten ULAM-Zwillingspaars
  *                  oder -1 bei Überlauf oder wenn es kein solches Paar gibt 
  *                  oder limit < 1 ist
-int ulam_twins(int limit); */
-
+ */
+int ulam_twins(int limit);
 
 /**
  * Prüft, ob im Intervall von 1 bis einschließlich limit ULAM-Mehrlinge 
@@ -125,7 +125,7 @@ int ulam_twins(int limit); */
  *                  keine Mehrlinge gefunden wurden, limit < number oder 
  *                  number < 2.
  */
-
+int ulam_multiples(int limit, int number);
 
 
 /* ============================================================================
@@ -302,3 +302,18 @@ int ulam_multiples(int limit, int number)
  * 
  * @return IMMER 0
  */
+int main(void)
+{
+    assert(ulam_max(5) == 16);
+    assert(ulam_max(7) == 52);
+    
+    assert(ulam_twins(6) == 5);
+    assert(ulam_twins(5) == -1);
+    
+    assert(ulam_multiples(  10, 2) ==   5);
+    assert(ulam_multiples(1000, 3) == 972);
+    assert(ulam_multiples( 108, 3) ==  -1);
+    assert(ulam_multiples( 391, 6) == 386);
+    
+    return (EXIT_SUCCESS);
+}
