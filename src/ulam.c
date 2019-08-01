@@ -125,7 +125,7 @@ int ulam_twins(int limit);
  *                  keine Mehrlinge gefunden wurden, limit < number oder 
  *                  number < 2.
  */
-int ulam_multiples(int limit, int number);
+
 
 
 /* ============================================================================
