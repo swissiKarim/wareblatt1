@@ -257,7 +257,7 @@ int ulam_multiples(int limit, int number)
      * viele Werte enthalten wie Mehrlinge gesucht werden */
     if (number < 2 || limit < number)
     {
-        return -1;
+        return 1;
     }
     
     /* 
