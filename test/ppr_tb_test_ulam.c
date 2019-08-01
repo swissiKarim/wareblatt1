@@ -14,6 +14,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <boost/shared_ptr.hpp>
+#include <vector>
+#include <stddef.h>
+#include <gr_complex.h>
 #include "ulam.c"
 #ifdef TESTBENCH
 #include "ppr_tb_logging.h"
